@@ -10,7 +10,7 @@
     "client",
     "rest"
   ],
-  "author": "Jeff Michel",
+  "author": "Jeffrey Michel",
   "license": "ISC",
   "dependencies": {
     "request": "^2.74.0"
