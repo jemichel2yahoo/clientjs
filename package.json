@@ -1,0 +1,18 @@
+{
+  "name": "clientjs",
+  "version": "1.0.0",
+  "description": "Consume RESTful services.",
+  "main": "client.js",
+  "scripts": {
+    "test": "node client.js"
+  },
+  "keywords": [
+    "client",
+    "rest"
+  ],
+  "author": "Jeff Michel",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}
