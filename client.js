@@ -1,4 +1,5 @@
-// Consume RESTful services!
+// Consume RESTful services!!!
+
 const request = require('request')
 
 request('http://jemichel.org', (error, response, body) => {
