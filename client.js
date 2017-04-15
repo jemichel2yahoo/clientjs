@@ -2,8 +2,9 @@
 
 const https = require('https')
 const fs = require('fs')
+const cas = require('ssl-root-cas/latest')
 
-https.globalAgent.options.ca = [ fs.readFileSync('c2.pem', 'utf8'), fs.readFileSync('c3.pem', 'utf8') ]
+https.globalAgent.options.ca = cas.create().addFile('verisign.pem')
 
 https.get('https://api-sandbox.capitalone.com', (response) => {
   console.log(`response: ${response.statusCode} ${response.headers['content-type']}`)

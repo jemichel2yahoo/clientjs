@@ -13,6 +13,7 @@
   "author": "Jeffrey Michel",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.74.0"
+    "request": "^2.74.0",
+    "ssl-root-cas": "^1.2.3"
   }
 }
