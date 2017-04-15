@@ -1,7 +1,6 @@
 // Consume RESTful services!!!
 
 const https = require('https')
-const fs = require('fs')
 const cas = require('ssl-root-cas/latest')
 
 https.globalAgent.options.ca = cas.create().addFile('verisign.pem')
