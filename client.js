@@ -6,9 +6,12 @@ const cas = require('ssl-root-cas/latest')
 
 https.globalAgent.options.ca = cas.create().addFile('cacert.pem')
 
-rp.get('https://localhost.jemichel.org:4433')
-  .then((body) => {
-    console.log(`${body}`)
+rp.get({
+    uri: 'https://localhost.jemichel.org:4433',
+    resolveWithFullResponse: true
+  })
+  .then((response) => {
+    console.log(`${response.statusCode} ${response.headers['content-type']} ${response.body}`)
   })
   .catch((error) => {
     console.error(error)
